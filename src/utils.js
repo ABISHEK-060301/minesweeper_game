@@ -19,7 +19,7 @@ export const ShowHide = (array, temp, id) => {
 }
 
 export const showBombs = (array, temp) => {
-    let obj = array.map((x, i) => {
+    array.map((x, i) => {
         if (x.value === "💣") {
             temp[i].value = x.value;
             return temp[i];

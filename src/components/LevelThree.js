@@ -17,6 +17,7 @@ const LevelThree = (event) => {
 
     useEffect(() => {
         makeShuffle();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [level])
 
     const makeShuffle = () => {
@@ -66,7 +67,7 @@ const LevelThree = (event) => {
                 }
             }
         }
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [counter, shuffledArray, tempArray, idArray, status, level, dispatch, event.props.history])
 
     const reset = () => {

@@ -14,9 +14,10 @@ const LevelFour = (event) => {
     const [idArray, setIdArray] = useState([]);
     const [level, setLevel] = useState('');
     const score = useSelector(state => state.score);
-
+    console.log(shuffledArray);
     useEffect(() => {
         makeShuffle();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [level])
 
     const makeShuffle = () => {
@@ -67,6 +68,7 @@ const LevelFour = (event) => {
 
             }
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [counter, shuffledArray, tempArray, idArray, status, level, dispatch, event.props.history])
 
     const reset = () => {

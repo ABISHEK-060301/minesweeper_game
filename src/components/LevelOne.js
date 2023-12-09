@@ -50,6 +50,7 @@ const LevelOne = (event) => {
                 }
             }
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [counter, shuffledArray, tempArray, idArray, status, dispatch, event.props.history])
 
     const reShuffle = () => {

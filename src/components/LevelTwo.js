@@ -17,6 +17,7 @@ const LevelTwo = (event) => {
 
     useEffect(() => {
         makeShuffle();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [level])
 
     const makeShuffle = () => {
